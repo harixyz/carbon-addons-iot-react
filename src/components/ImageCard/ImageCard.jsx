@@ -18,7 +18,7 @@ const ImageCard = ({ title, content, content: { data: image }, size, ...others }
   const availableActions = { expand: supportedSize };
 
   return (
-    <Card title={title} size={size} availableActions={availableActions} {...others}>
+    <Card title={title} size={size} availableActions={availableActions} isExpanded {...others}>
       {!others.isLoading ? (
         <ContentWrapper>
           {supportedSize ? (
